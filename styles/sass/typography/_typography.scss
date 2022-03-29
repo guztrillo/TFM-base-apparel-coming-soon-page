@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+     font-family:'Josefin Sans', sans-serif;
+}
+
+.apparel-intro {
+     color: $desaturated-red;
+     text-align: center;
+     h1 {
+          font-size: 2rem;
+          font-weight: 300;
+          letter-spacing: 1rem;
+          text-transform: uppercase;
+          strong {
+               color: $dark-grayish-red;
+               font-weight: 600;
+          }
+     }
+
+     p {
+          font-size: 0.85rem;
+          font-weight: 400;
+          line-height: 1.5;
+     }
+}
+
+.apparel-input {
+     font-size: 0.85rem;
+     &::placeholder {
+          font-size: 0.85rem;
+     }
+}
+
+
+@media (min-width: 40rem){
+     .apparel-intro {
+          text-align: left;
+          h1 {
+               font-size: 3rem;
+               line-height: 1.1;
+          }
+     
+          p {
+               font-size: 0.95rem;
+               line-height: 1.8;
+          }
+     }
+     .apparel-input {
+          font-size: 0.95rem;
+          &::placeholder {
+               font-size: 0.95rem;
+          }
+     }
+     
+}
+
+@media (min-width: 64rem){
+     .apparel-intro {
+          h1 {
+               font-size: 3.75rem;
+          }
+     }
+}

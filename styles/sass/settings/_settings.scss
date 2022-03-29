@@ -1,0 +1,26 @@
+//Primary
+$desaturated-red: hsl(0, 36%, 70%);
+$soft-red: hsl(0, 93%, 68%);
+$soft-green: hsl(145, 41%, 51%);
+//Neutral
+
+$dark-grayish-red: hsl(0, 6%, 24%);
+
+$dark-grayish-red-transparent: hsla(0, 6%, 24%, 0.2);
+$desaturated-red-transparent: hsla(0, 36%, 70%, 0.5);
+
+// Gradientes
+$gradient-one: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradient-two: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+$gradient-three: linear-gradient(135deg, hsl(0, 90%, 90%), hsl(0, 80%, 86%));
+
+$gradient-four: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 97%));
+
+// Transition Time
+$seconds: 0.2s;
+
+:export {
+     desaturedRed: $desaturated-red;
+     softRed: $soft-red;
+     darkGrayishRed: $dark-grayish-red;
+}
