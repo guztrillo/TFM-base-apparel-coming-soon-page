@@ -125,9 +125,7 @@ body {
 .apparel-email-not-valid {
   background: url(../../../images/icon-error.svg) no-repeat scroll calc(100% - 3.25rem) 50%; }
 
-.apparel-message-not-valid::after {
-  color: #f96262;
-  content: 'Please provide a valid email';
+.apparel-message-not-valid::after, .apparel-message-valid::after {
   flex-wrap: nowrap;
   font-size: 0.85rem;
   position: relative;
@@ -135,15 +133,13 @@ body {
   top: 0.5rem;
   transform: translateX(-0.5rem); }
 
+.apparel-message-not-valid::after {
+  color: #f96262;
+  content: 'Please provide a valid email'; }
+
 .apparel-message-valid::after {
   color: #4fb57a;
-  content: 'Successfully sent';
-  flex-wrap: nowrap;
-  font-size: 0.85rem;
-  position: relative;
-  left: 3.25rem;
-  top: 0.5rem;
-  transform: translateX(-0.5rem); }
+  content: 'Successfully sent'; }
 
 @media (min-width: 40rem) {
   .apparel-main-section {
@@ -187,7 +183,7 @@ body {
         transform: scale(0.85); }
       .apparel-form div button:hover {
         background-position: 5.8rem; }
-  .apparel-message-not-valid::after {
+  .apparel-message-not-valid::after, .apparel-message-valid::after {
     left: 3.5rem; } }
 
 @media (min-width: 64rem) {
@@ -197,5 +193,5 @@ body {
     padding: 0 7rem 0 10rem; }
   .apparel-form div {
     padding: 2.5rem 7rem 0 10rem; }
-  .apparel-message-not-valid::after {
-    left: 12.5rem; } }
+  .apparel-message-not-valid::after, .apparel-message-valid::after {
+    left: 12rem; } }
